@@ -324,7 +324,7 @@ main section .staffs {
 footer {
   position: relative;
   width: 100rem;
-
+  /* margin-right: 10rem; */
   margin-left: 15.55rem;
   top: 40rem;
 
@@ -384,20 +384,16 @@ footer h2 {
 }
 
 @media screen and (max-width: 640px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 30.2%;
-  }
-
   body {
     min-height: 100vh;
     background-image: url(img/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-auto-flow: row;
+    place-content: center;
   }
 
   ul {
@@ -408,31 +404,20 @@ footer h2 {
   }
 
   li {
-    display: list-item;
-    margin-inline: 2rem;
+    display: block;
+    margin-inline: 0.5rem;
   }
 
   li a {
     color: #fff;
     text-decoration: none;
-    font-size: 3rem;
-  }
-  li a span {
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 1rem;
-    padding: 0.6rem;
-    font-size: 2.5rem;
-  }
-  .head h4 {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 
   .head {
     display: flex;
     justify-content: flex-start;
-    gap: 38rem;
+    gap: 21rem;
     place-content: center;
     z-index: 2;
   }
@@ -443,13 +428,13 @@ footer h2 {
     color: #fff;
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 8rem;
+    font-size: 4rem;
     font-weight: bolder;
     text-align: center;
     position: relative;
     z-index: 2;
-    top: 27rem;
-    letter-spacing: 2rem;
+    top: 2rem;
+    letter-spacing: 0.3rem;
   }
   body header p {
     display: flex;
@@ -458,297 +443,196 @@ footer h2 {
     color: #fff;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25rem;
+    font-size: 10rem;
     font-weight: 100;
     position: relative;
     z-index: 2;
-    top: 33rem;
+    top: 3.5rem;
   }
   main .egg {
+    display: grid;
+    grid-row: auto;
     position: relative;
-    top: 70rem;
+    top: 25rem;
     z-index: 1;
     margin-bottom: 8rem;
-    place-content: center;
   }
 
-  .egg-pic img {
-    height: auto;
+  .egg-pic {
     position: relative;
     z-index: 1;
-    width: 400px;
-    margin-left: 5.5rem;
-  }
-
-  .words {
-    padding: 2rem 0rem 2rem 0rem;
-    background-color: #fff;
-    width: none;
+    margin-bottom: 1rem;
   }
 
   .egg .words {
     position: absolute;
-    width: 400px;
-    top: 80rem;
-    background-color: transparent;
+    top: 40rem;
     z-index: 2;
-    text-align: center;
-    justify-content: center;
   }
 
   main .egg .words h2 {
-    font-size: 6.8rem;
+    font-size: 2.5rem;
     font-weight: bolder;
-    padding: 0rem 10rem 2rem 10rem;
-    margin: 0rem 0rem 0rem 0rem;
-    justify-content: center;
-  }
-
-  main .egg .words p {
     text-align: center;
-    font-size: 4rem;
-    justify-content: center;
-    padding: 5rem 5rem 5rem 5rem;
-    margin: 0rem 0rem 0rem 0rem;
   }
+  .egg .words p {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
 
+    padding: 0rem 10rem 0rem 0.5rem;
+  }
   .egg .words button {
     position: relative;
     margin-top: 1.5rem;
-    font-size: 3rem;
-    text-align: center;
-    justify-content: center;
   }
 
-  .cup-pic img {
-    height: auto;
+  .cup-pic {
     position: relative;
     z-index: 1;
-    width: 400px;
-    margin-left: 5.5rem;
   }
 
   .cup .words {
     position: absolute;
-    width: 400px;
-    top: 80rem;
-    background-color: transparent;
+    top: 50rem;
     z-index: 2;
-    text-align: center;
-    justify-content: center;
   }
 
   main .cup .words h2 {
-    font-size: 6.8rem;
+    font-size: 1.5rem;
     font-weight: bolder;
-    padding: 3rem 0rem 2rem 0rem;
-    margin: 0rem 0rem 0rem 0rem;
-    justify-content: center;
+    text-align: center;
+
+    position: relative;
   }
 
   .cup .words p {
     text-align: center;
-    font-size: 4rem;
-    justify-content: center;
-    padding: 3rem 5rem 5rem 5rem;
-    margin: 0rem 0rem 0rem 0rem;
+    font-size: 1.5rem;
+    position: relative;
+
+    padding: 0px 10rem 0px 0.5rem;
   }
   .cup .words button {
     position: relative;
     margin-top: 1.5rem;
-    z-index: 3;
-    font-size: 3rem;
-    text-align: center;
-    justify-content: center;
   }
   main .cup {
+    display: grid;
+    grid-row: auto;
     position: relative;
-    top: 155rem;
+    top: 50rem;
     z-index: 1;
-    margin-bottom: 8rem;
-    place-content: center;
   }
 
   main .double-image {
     display: grid;
     grid-row: auto;
+
     place-content: center;
     position: relative;
-    top: 240rem;
+    top: 95rem;
   }
   .graphic img {
-    height: 450px;
-    position: relative;
     z-index: 1;
-    width: 400px;
-    margin-left: 5.5rem;
-    margin-bottom: 0;
+    position: relative;
+    top: 1rem;
   }
   .photography img {
-    height: 450px;
-    position: relative;
     z-index: 1;
-    width: 400px;
-    margin-left: 5.5rem;
-    margin-top: 0;
+    position: relative;
   }
 
   main .de {
-    display: flow-root;
-    z-index: 3;
+    display: grid;
+    grid-row: auto;
+    z-index: 2;
     position: absolute;
-    margin: 0;
   }
   .de .de-word1 {
+    display: block;
     position: relative;
-    display: inline-block;
-
+    top: 80rem;
+    left: 0;
     z-index: 2;
-    top: 355rem;
-
-    margin-left: 1rem;
   }
   .de .de-word2 {
-    display: inline-block;
+    display: block;
     position: relative;
-    top: 420rem;
+    top: 75rem;
+    left: 0;
     z-index: 2;
-    margin-left: 2rem;
-    margin-right: 1rem;
   }
 
   .de .de-word1 h2 {
     text-align: center;
-    font-size: 6rem;
+    font-size: 2.5rem;
     color: rgb(0, 44, 0);
-    margin-left: 13rem;
   }
   .de .de-word2 h2 {
     text-align: center;
-    font-size: 6rem;
+    font-size: 2.5rem;
     color: rgb(3, 3, 83);
   }
   .de .de-word1 p {
     text-align: center;
-    font-size: 3rem;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
+    font-size: 1.3rem;
+    margin-top: 2rem;
     color: rgb(0, 44, 0);
     line-height: 1.5;
   }
   .de .de-word2 p {
     text-align: center;
-    font-size: 3rem;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
     color: rgb(3, 3, 83);
     line-height: 1.5;
   }
 
   section {
     position: relative;
-    top: 246rem;
+    top: 93rem;
   }
-  main section .staffs {
-    display: flow-root;
-    justify-content: center;
-    gap: 0;
-    margin-left: 3rem;
-    margin-right: 3rem;
+  .staffs {
+    display: grid;
+    grid-row: auto;
+    gap: 1.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
-  section h2 {
-    text-transform: uppercase;
-    color: gray;
-    font-size: 4rem;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-  .staffs h3 {
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 4rem;
-    text-align: center;
-  }
+
   .staffs p {
     margin-bottom: 3rem;
-    font-size: 3.5rem;
+    font-size: 1.3rem;
     color: gray;
     text-align: center;
     line-height: 1.5;
   }
-  .emily img {
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    margin-bottom: 0.5em;
-  }
-
-  .thomas img {
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    margin-bottom: 0.5em;
-  }
-  .jennie img {
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    margin-bottom: 0.5em;
-  }
   .sunnyside-product {
     display: flow-root;
-    flex-flow: wrap;
-    gap: 0;
-    place-content: center;
-    place-items: center;
     position: relative;
-    top: 250rem;
-
-    margin-right: 0;
+    top: 95rem;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
   .sunnyside-product img {
-    width: 186px;
+    width: 15rem;
     height: auto;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   footer {
     position: relative;
-    top: 249rem;
-    background-color: #8ee1e2;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    justify-content: center;
-    gap: 0;
-    width: 400px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  footer h2 {
-    text-align: center;
-    font-size: 5rem;
-    font-weight: bold;
-    color: #066156;
-    padding-bottom: 4rem;
-  }
-  .footer-link li {
-    display: inline-block;
-    margin-inline: 4rem;
-    margin-bottom: 10rem;
-  }
+    top: 677px;
+    margin-left: 25px;
+    margin-left: 25px;
 
-  .footer-link li a {
-    color: #066156;
-    text-decoration: none;
-    font-size: 2.5rem;
-    margin-inline: 2rem;
+    background-color: #8ee1e2;
+    width: 305px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
   }
 
   .social-media ul {
